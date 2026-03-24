@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <div class="particles"></div>
+
     <nav class="navegacao">
         <ul class="menu">
             <li><a href="#home" class="menu-link">Home</a></li>
@@ -22,14 +24,16 @@
         <section id="home" class="cabecalho">
             <h1>Bem-vindo ao meu Portfólio</h1>
             <img src="./img/bugny.png" alt="Foto de Bugny" class="foto-perfil">
-            <p class="cabecalho-sub-titulo">Olá! Sou Bugny, um desenvolvedor apaixonado por criar soluções inovadoras. Explore meus projetos e
+            <p class="cabecalho-sub-titulo">Olá! Sou Bugny, um desenvolvedor apaixonado por criar soluções inovadoras.
+                Explore meus projetos e
                 habilidades abaixo.</p>
         </section>
 
         <section id="about" class="about">
             <h2 class="about-title">Sobre Mim</h2>
             <div class="about-content">
-                <p class="about-paragrafo">Sou um desenvolvedor com experiência em diversas tecnologias, incluindo JavaScript, Python e React.
+                <p class="about-paragrafo">Sou um desenvolvedor com experiência em diversas tecnologias, incluindo
+                    JavaScript, Python e React.
                     Tenho um forte interesse em desenvolvimento web e estou sempre buscando aprender novas habilidades.
                 </p>
             </div>
@@ -40,23 +44,33 @@
             <div class="projects-box">
                 <div class="projects-card">
                     <img src="./img/projeto one piece.png" alt="Projeto 1" class="projects-image">
-                    <h3 class="projects-info">Projeto 1: Aplicativo de Tarefas</h3>
-                    <p class="projects-description">Desenvolvi um aplicativo de tarefas usando React e Node.js, permitindo aos usuários criar, editar
-                        e excluir tarefas de forma eficiente.</p>
+                    <div class="projects-info-container">
+                        <h3 class="projects-info">Projeto 1: Aplicativo de Tarefas</h3>
+                        <p class="projects-description">Desenvolvi um aplicativo de tarefas usando React e Node.js,
+                            permitindo aos usuários criar, editar
+                            e excluir tarefas de forma eficiente.</p>
+                    </div>
                 </div>
 
                 <div class="projects-card">
                     <img src="./img/projeto one piece.png" alt="Projeto 2" class="projects-image">
-                    <h3 class="projects-info">Projeto 2: Site Institucional</h3>
-                    <p class="projects-description">Desenvolvi um site institucional para uma empresa, utilizando HTML, CSS e JavaScript, com foco em
-                        responsividade e usabilidade.</p>
+                    <div class="projects-info-container">
+                        <h3 class="projects-info">Projeto 2: Site Institucional</h3>
+                        <p class="projects-description">Desenvolvi um site institucional para uma empresa, utilizando
+                            HTML,
+                            CSS e JavaScript, com foco em
+                            responsividade e usabilidade.</p>
+                    </div>
                 </div>
 
                 <div class="projects-card">
                     <img src="./img/projeto one piece.png" alt="Projeto 3" class="projects-image">
-                    <h3 class="projects-info">Projeto 3: E-commerce</h3>
-                    <p class="projects-description">Desenvolvi uma loja virtual completa usando React e Node.js, com funcionalidades de carrinho de
-                        compras e processamento de pagamentos.</p>
+                    <div class="projects-info-container">
+                        <h3 class="projects-info">Projeto 3: E-commerce</h3>
+                        <p class="projects-description">Desenvolvi uma loja virtual completa usando React e Node.js, com
+                            funcionalidades de carrinho de
+                            compras e processamento de pagamentos.</p>
+                    </div>
                 </div>
                 <!-- <ul>
                     <li><strong>Projeto 1:</strong> Descrição do projeto 1.</li>
@@ -67,19 +81,28 @@
         </section>
 
         <section id="contact" class="contact">
-            <h2 class="contact-title">Contato</h2>
+            <h2 class="contact-title">Entre em Contato</h2>
             <form class="formulario-contact" id="formulario">
-                <div class="nome-form">
+                <div class="name-form">
                     <input placeholder="Nome" class="campo-form">
                 </div>
 
                 <div class="grupo-form">
                     <textarea placeholder="Digite Sua Mensagem" class="text-form"></textarea>
                 </div>
+
+                <button type="submit" class="btn-form">Enviar</button>
             </form>
-            <p>Você pode me contatar através do email: bugny@example.com</p>
+            <p class="info-contact">Você pode me contatar através do email: bugny@example.com</p>
         </section>
     </main>
 </body>
+
+<footer>
+
+    <img src="./img/bugny.png" alt="Foto de Bugny" class="foto-footer">
+    <p class="text-footer">&copy; 2023 Meu Portfólio. Todos os direitos reservados.</p>
+    
+</footer>
 
 </html>
