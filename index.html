@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="./img/bugny.png">
     <title>Portfólio Bugny</title>
 </head>
 
@@ -82,13 +84,13 @@
 
         <section id="contact" class="contact">
             <h2 class="contact-title">Entre em Contato</h2>
-            <form class="formulario-contact" id="formulario">
+            <form class="formulario-contact" id="formulario" onsubmit="enviarWhats(event)">
                 <div class="name-form">
-                    <input placeholder="Nome" class="campo-form">
+                    <input placeholder="Nome" class="campo-form" id="name">
                 </div>
 
                 <div class="grupo-form">
-                    <textarea placeholder="Digite Sua Mensagem" class="text-form"></textarea>
+                    <textarea placeholder="Digite Sua Mensagem" class="text-form" id="message"></textarea>
                 </div>
 
                 <button type="submit" class="btn-form">Enviar</button>

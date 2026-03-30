@@ -91,6 +91,8 @@ body {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 4px solid var(--vidro);
+    /* animation: float 5s ease-in-out infinite; */
+    animation: pulsate 3s ease-in-out infinite;
 }
 
 h1 {
@@ -233,6 +235,28 @@ h1 {
     display: flex;
     gap: 1rem;
     min-height: 50px;
+    /* background: rgba(255, 255, 255, 0.1); */
+    border: 1px solid var(--vidro);
+    border-radius: 8px;
+}
+
+.name-form,
+.grupo-form {
+    width: 100%;
+    /* max-width: 600px; */
+
+}
+
+.campo-form,
+.text-form {
+    width: 100%;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.1);
+    /* mesma base do textarea */
+    color: var(--claro);
+    /* texto claro */
+    border: 1px solid var(--vidro);
 }
 
 .campo-form {
@@ -242,6 +266,18 @@ h1 {
     background: rgba(255, 255, 255, 0.1);
     color: var(--claro);
     font-size: 1rem;
+}
+
+.campo-form:focus {
+    outline: none;
+    border-color: var(--primaria);
+    box-shadow: 0 0 5px var(--primaria);
+}
+
+.text-form:focus {
+    outline: none;
+    border-color: var(--primaria);
+    box-shadow: 0 0 5px var(--primaria);
 }
 
 .grupo-form {
@@ -344,7 +380,9 @@ footer {
 }
 
 @keyframes float {
-    0% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
 
@@ -352,8 +390,21 @@ footer {
         transform: translateY(-20px);
     }
 
+}
+
+@keyframes pulsate {
+
+    0%,
     100% {
-        transform: translateY(0);
+        transform: scale(1);
+        opacity: 1;
+        box-shadow: 0 0 0 0 rgba(255, 30, 30, 0.7);
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+        box-shadow: 0 0 0 5px rgba(255, 30, 30, 0);
     }
 }
 
