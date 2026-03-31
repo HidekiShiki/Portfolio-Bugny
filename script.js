@@ -7,8 +7,8 @@ function enviarWhats(event) {
         alert('Por favor, preencha ambos os campos: Nome e Mensagem.');
         return;
     }
-    
-    const telefone = '55 35 98435-9815';
+
+    const telefone = '55 35 99999-9999';
     const text = `Olá, meu nome é ${name},  ${message}`;
     const msgFormatada = encodeURIComponent(text);
 
